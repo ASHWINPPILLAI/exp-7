@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.bmi-container {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: bold;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.button-group button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-group button:hover {
+  background-color: #0056b3;
+}
+
+.button-group .reset-button {
+    background-color: #6c757d;
+}
+
+.button-group .reset-button:hover {
+    background-color: #5a6268;
+}
+
+.result-section {
+  margin-top: 25px;
+}
+
+.result-section h2 {
+  color: #333;
+}
+
+.bmi-status {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+/* Color styling based on BMI status */
+.bmi-status.underweight {
+  background-color: #3498db; /* Blue */
+}
+.bmi-status.normal-weight {
+  background-color: #2ecc71; /* Green */
+}
+.bmi-status.overweight {
+  background-color: #f1c40f; /* Yellow */
+  color: #333;
+}
+.bmi-status.obese {
+  background-color: #e74c3c; /* Red */
+}
